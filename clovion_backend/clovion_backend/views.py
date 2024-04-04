@@ -10,11 +10,11 @@ def enter_marks(request):
         science = int(request.POST.get('science'))
         social = int(request.POST.get('social'))
 
-        # Calculate total and average marks
+        
         total_marks = tamil + english + maths + science + social
         average_marks = total_marks / 5
 
-        # Create a new StudentMarks object and save it
+        
         student_marks = StudentMarks.objects.create(
             tamil=tamil,
             english=english,
@@ -31,7 +31,7 @@ def enter_marks(request):
         return render(request, 'enter_marks.html')
 
 def result(request):
-    # Retrieve the latest student marks data
+    
     latest_student_marks = StudentMarks.objects.latest('id')
     context = {
         'total_marks': latest_student_marks.total_marks,
