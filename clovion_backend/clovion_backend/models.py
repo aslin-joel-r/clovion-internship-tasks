@@ -7,3 +7,5 @@ class StudentMarks(models.Model):
     maths = models.IntegerField()
     science = models.IntegerField()
     social = models.IntegerField()
+    total_marks = models.IntegerField(blank=True, null=True)  # Add new field for total marks
+    average_marks = models.FloatField(blank=True, null=True)  # Add new field for average marks

@@ -1,1 +1,22 @@
-<h1>The form has been sucessfully submitted</h1>
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static './style.css' %}">
+    <title>Result</title>
+</head>
+<body>
+    <style>
+        h3{
+            color:blue;
+        }
+    </style>
+   <div id="result-container" style="text-align: center;">
+    <h2>Result</h2>
+    <h3>Total Marks: {{ total_marks }}</h3>
+    <h3>Average Marks: {{ average_marks }}</h3>
+   </div>
+</body>
+</html>
