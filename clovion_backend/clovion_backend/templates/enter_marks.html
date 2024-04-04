@@ -10,7 +10,9 @@
 </head>
 <body>
     <div class="form-container">
-        <form action="">
+        <form method="post">
+            {% csrf_token %}
+          
             <h1>Clovion Mark Calculator</h1>
             <div class="form-group">
                 <label for="tamil">Tamil :</label>
