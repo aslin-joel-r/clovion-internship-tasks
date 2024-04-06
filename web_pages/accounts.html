@@ -16,31 +16,45 @@
       background-color: purple;
     }
     .user-img{
-      height: 100px;
-      width: 100px;
+      height: 70px;
+      width: 70px;
     }
   </style>
-  <header class="container-fluid d-flex justify-content-center align-items-center  text-white p-2  h-200">
+  <header class="container-fluid d-flex justify-content-around align-items-center  text-white p-2 h4 h-200">
     Account
   </header>
-<div class="container-fluid d-inline-flex p-3 shadow">
-  <img class="user-img rounded-circle " alt="avatar1" src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp" />
-  <p>Abi</p>
-  <p>abi@gmail.com</p>
-  <i class="fas fa-edit"></i>
-</div>
-<div >
-  <div class="d-flex p-3">
-    <i class="fas fa-edit"></i><p>UPi and Bank Details</p>
+  <div class="container-fluid justify-content-center p-3 shadow">
+    <div class="row align-items-center">
+      <div class="col">
+        <img class="user-img rounded-circle mb-2" alt="avatar1" src="https://mdbcdn.b-cdn.net/img/new/avatars/9.webp" />
+      </div>
+      <div class="col-7">
+        <b class="mb-1">Abi</b>
+        <p class="mb-1">abi@gmail.com</p>
+      </div>
+      <div class="col ">
+        <i class="fas fa-edit ms-2"></i>
+      </div>
+    </div>
   </div>
-  <div class="d-flex p-3">
-    <i class="fas fa-edit"></i><p>Legal and Policies</p>
+  
+  
+<div class="container mt-3 p-4">
+  <div class="d-flex p-2">
+    <i class="fas fa-credit-card "></i>
+    <p class="ms-3">UPi and Bank Details</p>
   </div>
-  <div class="d-flex p-3">
-    <i class="fas fa-edit"></i><p>About US</p>
+  <div class="d-flex p-2">
+    <i class="fas fa-file-alt"></i>
+    <p class="ms-3">Legal and Policies</p>
   </div>
-  <div class="d-flex p-3">
-    <i class="fas fa-edit" ></i><p>Logout</p>
+  <div class="d-flex p-2 ">
+    <i class="fas fa-info-circle"></i>
+    <p class="ms-3">About US</p>
+  </div>
+  <div class="d-flex p-2">
+    <i class="fas fa-sign-out-alt" ></i>
+    <p class="ms-3">Logout</p>
   </div>
 </div>
 
